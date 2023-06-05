@@ -22,7 +22,7 @@ git clone https://github.com/youqiangao/word-level-Maximum-Mean-Discrepancy.git
 
 To run the `CNN` model on `BBC` dataset with the `wMMD` regularization (weight = 10^2), use 
 ```shell
-python main.py --dataset bbc --model cnn --regularization wmmd -we 2 
+python main.py --dataset bbc --model cnn --regularization wmmd --weight-exponent 2 
 ```
 
 To check more arguments of the script, use 
@@ -30,7 +30,7 @@ To check more arguments of the script, use
 python main.py --help
 ```
 
-## Real aaplication results
+## Real aplication results
 
 + Three different neural network architectures are considered: `GRU`, and `BiLSTM`, `CNN`. The detailed model structures are stored in [models.py](https://github.com/youqiangao/word-level-Maximum-Mean-Discrepancy/blob/main/models.py).
 + We consider different embedding sizes with $r$ = 20, 50, 100, 200, 300, and one pre-trained embeddings with sizes of 300 from `Word2Vec` (WV).
