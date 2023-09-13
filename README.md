@@ -20,9 +20,11 @@ git clone https://github.com/youqiangao/wMMD.git
 
 ## Usage
 
-Example: To train a `CNN` model on the `BBC` dataset with the `wMMD` regularization (weight = 10^2), execute the following command:
+Example: To train a `CNN` model on the `ChileEarthquakeT1` dataset with the `wMMD` (weight = 10^3), `l1` (weight = 10^3) or `dropout` (dropout-rate = 0.5), execute the following command:
 ```shell
-python main.py --dataset bbc --model cnn --regularization wmmd --weight-exponent 2 
+python main.py --dataset chile-earthquakeT1 --model cnn --regularization wmmd --weight-exponent 3
+python main.py --dataset chile-earthquakeT1 --model cnn --regularization l1 --weight-exponent 3
+python main.py --dataset chile-earthquakeT1 --model cnn --structure dropout --dropout-rate 0.5
 ```
 
 To check more arguments of the command, run 
