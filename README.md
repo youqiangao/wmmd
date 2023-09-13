@@ -1,4 +1,4 @@
-# Word-level Maximum Mean Discrepancy Regularization for Embedding-based Neural Networks in NLP
+# Word-level Maximum Mean Discrepancy Regularization for Word Embedding
 
 `wMMD` is a Python module for implementing word-level Maximum Mean Discrepancy Regularization.
 
@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 You can check the latest code with the command:
 ```
-git clone https://github.com/youqiangao/word-level-Maximum-Mean-Discrepancy.git
+git clone https://github.com/youqiangao/wMMD.git
 ```
 
 ## Usage
