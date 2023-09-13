@@ -34,7 +34,7 @@ python main.py --help
 
 + Three different neural network architectures are considered: `GRU`, `BiLSTM`, and `CNN`. The detailed model structures are saved in [models.py](https://github.com/youqiangao/wMMD/blob/main/models.py).
 + The effects of various embedding sizes are investigated with $r$ = 20, 50, 100, 200, 300, as well as one pre-trained embedding with a fixed size of 300.
-+ For `L1` and `wMMD`, the optimal weight $\lambda$ is determined by a grid search over $\{10^{(s-16)/5}, s = 1, \dots, 36\}$. As for `dropout`, the best dropout rate is tuned by a grid search over $\{ 0.05s, s = 1, \dots, 19\}$. The prediction performance of all methods is measured by classification accuracy.
++ For `L1` and `wMMD`, the optimal weight $\lambda$ is determined by a grid search over $\lbrace 10^{(s-16)/5}, s = 1, \dots, 36 \rbrace$. As for `dropout`, the best dropout rate is tuned by a grid search over $\lbrace 0.05s, s = 1, \dots, 19 \rbrace$. The prediction performance of all methods is measured by classification accuracy.
 
 ### Results on the `ChileEarthquakeT1` dataset
 
