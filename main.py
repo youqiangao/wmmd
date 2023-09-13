@@ -46,12 +46,12 @@ label_num = {
     "chile-earthquakeT1": 2
 }.get(args.dataset)
 
-PRETRAINED_EMBEDDINGS = ["word2vec-google-news-300"]
-if args.embed_name is not None:
-    args.embed_name = args.embed_name.lower() 
-    args.embed_size = 300
-    if args.embed_name not in PRETRAINED_EMBEDDINGS:
-        raise ValueError(f"embedding-name should be one of {PRETRAINED_EMBEDDINGS}.")
+# PRETRAINED_EMBEDDINGS = ["word2vec-google-news-300"]
+# if args.embed_name is not None:
+#     args.embed_name = args.embed_name.lower() 
+#     args.embed_size = 300
+#     if args.embed_name not in PRETRAINED_EMBEDDINGS:
+#         raise ValueError(f"embedding-name should be one of {PRETRAINED_EMBEDDINGS}.")
 
 MODELS = ["bilstm", "gru", "cnn"]
 args.model = args.model.lower()
@@ -163,7 +163,6 @@ for t in range(epochs):
     acc = test_loop(test_dataloader, model, device)
     lr_scheduler.step()
 logger.info("Done!")
-
 
 # print start time and end time
 now = datetime.now()
