@@ -67,7 +67,7 @@ python main.py --help
 
 ## Results on the `BBC News` Dataset
 
-+ Average classification accuracy and standard error (in parenthesis) is presented in the following table, based on 20 replications on the `BBC News` dataset. The highest performance in each setting is highlighted in **bold**.
++ Average classification accuracy and standard error (in parenthesis) is presented in the following table, based on 10 replications on the `BBC News` dataset. The highest performance in each setting is highlighted in **bold**.
 + The pretrained embedding denoted as `GoogleNews` can be found in [this link](https://github.com/RaRe-Technologies/gensim-data).
 
 | model             | embedding size | No regularization | L1            | dropout       | wMMD (our)          |
