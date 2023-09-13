@@ -2,7 +2,7 @@ import torch
 import numpy as np
 
 
-class MMD(object):
+class wMMD(object):
     """
     Compute Maximum Mean Discrepancy using mini-batch data.
     """

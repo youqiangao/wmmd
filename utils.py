@@ -1,5 +1,5 @@
 import torch
-from regularizer import MMD, L1
+from regularizer import wMMD, L1
 
 
 def train_loop(dataloader, model, loss_fn, optimizer, device, **kwargs):
@@ -15,7 +15,7 @@ def train_loop(dataloader, model, loss_fn, optimizer, device, **kwargs):
             l1 = L1(model.embedding.weight)
             loss = loss + kwargs["weight"] * l1.compute()
         elif kwargs["regularization"] == "wmmd":
-            mmd = MMD(model.embedding.weight, kwargs["stopping_idx"], device)
+            mmd = wMMD(model.embedding.weight, kwargs["stopping_idx"], device)
             mmd_value = mmd.compute(ids, labels)
             loss = loss - kwargs["weight"] * mmd_value
 
