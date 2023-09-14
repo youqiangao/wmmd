@@ -1,6 +1,6 @@
 # Usage
 
-Here is an example to show how to run the code to train a logistic classifier on a simulated dataset, with no regularization, dropout (dropout rate = 0.1), L1 (weight = 10^0) and wMMD (weight = 10^3).
+Here is an example to show how to run the code to train a logistic classifier on a simulated dataset, with no regularization, dropout (dropout rate = 0.1), L1 (weight = 10^0) or wMMD (weight = 10^3).
 
 ```shell
 python main.py --num-vocabs 1000 --num-words 10 --sample-size 200 --embedding-size 5 --dist0-alpha 0.5
