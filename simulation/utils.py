@@ -1,6 +1,11 @@
-import torch
-from regularizer import wMMD, L1
+import torch 
+import os
+import sys
 
+# import modules from parent folders
+directory = os.path.dirname(os.path.abspath("__file__"))
+sys.path.append(os.path.dirname(directory))
+from regularizer import L1, wMMD
 
 def train_loop(dataloader, model, loss_fn, optimizer, device, **kwargs):
     model.train()
@@ -38,17 +43,9 @@ def test_loop(dataloader, model, device):
             labels = data['label'].to(device)
             pred = model(ids)
 
-            predicted = torch.argmax(pred, dim = 1)
+            predicted = pred.data.round().squeeze()
             total += len(labels)
             correct += (predicted == labels).sum().item()
     acc = 100 * correct / total
-    print(f'Accuracy on the test dataset: {acc:4} %')
+    print(f'Accuracy of the network on the test dataset: {acc:4} %')
     return acc
-
-def collate_fn(batch):
-    input_ids = [_[0] for _ in batch]
-    label = [_[1] for _ in batch]
-    label = torch.tensor(label, dtype = torch.long)
-    input_ids = torch.tensor(input_ids, dtype = torch.long)
-    return {'label': label, 'input_ids': input_ids}
-

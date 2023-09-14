@@ -20,7 +20,7 @@ git clone https://github.com/youqiangao/wMMD.git
 
 ## Usage
 
-To train a `CNN` model on the `ChileEarthquakeT1` dataset with the `wMMD` (weight = 10^3), `l1` (weight = 10^3) or `dropout` (dropout-rate = 0.5), repsectively execute the following commands:
+To train a `CNN` model on the `ChileEarthquakeT1` dataset with the `wMMD` (weight = 10^3), `l1` (weight = 10^3) or `dropout` (dropout rate = 0.5), repsectively execute the following commands:
 ```shell
 python main.py --dataset chile-earthquakeT1 --model cnn --regularization wmmd --weight-exponent 3
 python main.py --dataset chile-earthquakeT1 --model cnn --regularization l1 --weight-exponent 3
