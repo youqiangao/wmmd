@@ -4,11 +4,14 @@ Here is an example to show how to run the code to train a logistic classifier on
 
 ```shell
 python main.py --num-vocabs 1000 --num-words 10 --sample-size 200 --embedding-size 5 --dist0-alpha 0.5
-
+```
+```shell
 python main.py --num-vocabs 1000 --num-words 10 --sample-size 200 --embedding-size 5 --dist0-alpha 0.5 --structure dropout --dropout-rate 0.1
-
+```
+```shell
 python main.py --num-vocabs 1000 --num-words 10 --sample-size 200 --embedding-size 5 --dist0-alpha 0.5 --regularization l1 --weight-exponent 0
-
+```
+```shell
 python main.py --num-vocabs 1000 --num-words 10 --sample-size 200 --embedding-size 5 --dist0-alpha 0.5 --regularization wmmd --weight-exponent 3
 ```
 
