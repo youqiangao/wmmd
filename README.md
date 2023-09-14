@@ -1,6 +1,6 @@
 # Word-level Maximum Mean Discrepancy Regularization for Word Embedding
 
-`wMMD` is a Python module for implementing word-level Maximum Mean Discrepancy (wMMD) regularization.
+`wMMD` is a Python module for implementing word-level maximum mean discrepancy (wMMD) regularization.
 
 ## Installation
 
@@ -34,7 +34,7 @@ python main.py --help
 
 ## Results on real datasets
 
-+ Three different neural network architectures are considered: `GRU`, `BiLSTM`, and `CNN`. The detailed model structures are saved in [models.py](https://github.com/youqiangao/wMMD/blob/main/models.py).
++ Three different neural network architectures are considered: `GRU`, `BiLSTM`, and `CNN`. 
 + The effects of various embedding sizes are investigated with $r$ = 20, 50, 100, 200, 300, as well as one pre-trained embedding with a fixed size of 300.
 + For `L1` and `wMMD`, the optimal weight $\lambda$ is determined by a grid search over $\lbrace 10^{(s-16)/5}, s = 1, \dots, 36 \rbrace$. As for `dropout`, the best dropout rate is tuned by a grid search over $\lbrace 0.05s, s = 1, \dots, 19 \rbrace$. The prediction performance of all methods is measured by classification accuracy.
 
@@ -95,7 +95,7 @@ python main.py --help
 
 ### Tuning with no tears
 
-+ The following figure displays average classification accuracy and 95% confidence interval of `CNN` trained on `ChileEarthquakeT1` using various hyperparameter values. The embedding size is 20. The grey dashed line represents the average accuracy with no regularization.
-+ In constrst to `dropout` and `L1`, the performance with `wMMD` regularization initially increases and then stabilizes as the weight increases. Furthermore, `wMMD` exhibits a broader range of optimal weights compared to L1. These properties significantly mitigate the hyperparameter-tuning issue. It is noteworthy that similar trends are observed for other models and embedding sizes on both datasets in the conducted experiments.
++ The following figure displays average classification accuracy and 95% confidence interval of `CNN` trained on `ChileEarthquakeT1` using various hyperparameter values. The embedding size is 20. The gray dashed line represents the average accuracy with no regularization.
++ In constrst to `dropout` and `L1`, the performance with `wMMD` regularization initially increases and then stabilizes as the weight increases. Furthermore, `wMMD` exhibits a broader range of optimal weights compared to L1. **These properties significantly mitigate the hyperparameter-tuning issue**. It is noteworthy that similar trends are observed for other models and embedding sizes on both datasets in the conducted experiments.
 
 ![tuning-visualization](https://user-images.githubusercontent.com/26051979/267685125-832cffe8-2ade-48d5-b756-9ef2ed25a30c.png)
