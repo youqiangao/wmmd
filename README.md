@@ -40,7 +40,7 @@ The `regularizer.py` file contains the implementation of the `wMMD` regularizati
 ```python
 loss = loss - weight * wMMD(model.embedding.weight, stopping_idx)
 ```
-The `weight` hyperparameter balances the objective loss function and regularization loss. The `stopping_idx` includes the indices we wish to exclude from the calculation of `wMMD` regularization. By default, it is set to `[0]`, representing the index for padding.
+The `weight` hyperparameter balances the objective loss function and regularization loss. The `stopping_idx` includes the indices you wish to exclude from the calculation of `wMMD` regularization. By default, it is set to `[0]`, representing the index for padding.
 
 ## Results on real datasets
 
