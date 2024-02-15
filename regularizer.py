@@ -7,7 +7,7 @@ class wMMD(object):
     Compute Maximum Mean Discrepancy using mini-batch data.
     """
     
-    def __init__(self, embedding, stopping_idx, device):
+    def __init__(self, embedding, stopping_idx = [0], device = "cpu"):
         self.embedding = embedding
         self.vocab_num = embedding.size()[0]
         self.stopping_idx = stopping_idx
