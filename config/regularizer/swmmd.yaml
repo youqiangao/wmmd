@@ -1,0 +1,4 @@
+_target_: regularizers.SwMMD
+weight: 1000.0
+stopping_start_idx: 1000
+stopping_end_idx: 1100

@@ -1,0 +1,6 @@
+_target_: models.MLP
+vocab_num: ${dataset.vocab_num}
+embedding_size: 5
+word_size: ${dataset.word_size}
+num_classes: ${dataset.num_classes}
+regularizer: ???

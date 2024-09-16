@@ -1,0 +1,11 @@
+defaults:
+  - dataset: sim1
+  - model: logistic
+  - regularizer: none
+  - _self_
+
+seed: 1
+test_size: 0.5
+batch_size: 64
+epochs: 30
+learning_rate: 1e-1

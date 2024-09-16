@@ -1,0 +1,5 @@
+_target_: datasets.BBCNewsDataset
+repreprocess: False
+vocab_num: 4982
+word_size: 512
+num_classes: 5

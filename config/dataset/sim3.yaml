@@ -1,0 +1,9 @@
+_target_: datasets.SimDataset3
+sample_size: 400
+vocab_num: 500
+dist0_alpha: 0.5
+dist0_beta: 0.5
+dist1_alpha: 5.0
+dist1_beta: 5.0
+num_classes: 2
+word_size: 2

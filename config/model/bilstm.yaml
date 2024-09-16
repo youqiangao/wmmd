@@ -1,0 +1,5 @@
+_target_: models.BiLSTM
+vocab_num: ${dataset.vocab_num}
+embedding_size: 5
+num_classes: ${dataset.num_classes}
+regularizer: ???

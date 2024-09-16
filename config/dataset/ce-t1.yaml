@@ -1,0 +1,5 @@
+_target_: datasets.CET1Dataset
+repreprocess: False
+vocab_num: 738
+word_size: 32
+num_classes: 2
