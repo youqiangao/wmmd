@@ -1,16 +1,6 @@
 ## Word-level Maximum Mean Discrepancy Regularization for Word Embedding
 
-<!-- Authors: [Youqian Gao](https://github.com/youqiangao), [Ben Dai](https://www.bendai.org/) -->
-
-### Motivation
-
-The technique of word embedding is widely used in natural language processing to represent words as numerical vectors in textual datasets. However, the estimation of word embedding may suffer from severe overfitting due to the huge variety of words. 
-
-The word clouds show significant differences in the most common words between the "sports" and "business" categories in the BBC News dataset. Observing the word-level distribution discrepancy in the dataset, a good embedding should result in numerical word representations that maintain the word-level distribution discrepancy.
-
-<p align="center">
-    <img src="figures/bbc-word-dist-diff.jpg" width="70%" />
-</p>
+Authors: [Youqian Gao](https://github.com/youqiangao), [Ben Dai](https://www.bendai.org/)
 
 
 ### Introduction
@@ -23,6 +13,17 @@ We visualize the embedding of a CNN model trained on the CE-T1 dataset, with dif
     <img src="figures/embed-visual.png" width="70%" />
 </p>
 
+Furthermore, **WMMD** regularization offers a flexible framework to incorporate prior information and high-order distribution discrepancies of words. For more information, kindly refer to the paper.
+
+### Motivation
+
+The technique of word embedding is widely used in NLP to represent words as numerical vectors in textual datasets. However, the estimation of word embedding may suffer from severe overfitting due to the huge variety of words. 
+
+The word clouds show significant differences in the most common words between the "sports" and "business" categories in the BBC News dataset. Given the word-level distribution discrepancy in the dataset, a good word embedding should result in numerical word representations that maintain the word-level distribution discrepancy.
+
+<p align="center">
+    <img src="figures/bbc-word-dist-diff.jpg" width="70%" />
+</p>
 
 ### Setup
 ```shell
