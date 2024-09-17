@@ -11,11 +11,11 @@ Word-level maximum mean discrepancy (**WMMD**) is a novel regularization framewo
 
 The word clouds show significant differences in the most common words between the "sports" and "business" categories in the BBC News dataset. Observing the word-level distribution discrepancy in the dataset, a good embedding should result in numerical word representations that maintain the word-level distribution discrepancy.
 
-![tweet-word-dist-diff](figures/bbc-word-dist-diff.jpg)
+<img src="figures/bbc-word-dist-diff.jpg" width="450" />
 
-WWe visualize the embedding of a CNN model trained on the CE-T1 dataset, with different regularization. The **WMMD** regularization separates the word vectors under different labels and enforces the word-level discrepancy between the two groups. The degree of the discrepancy increases as the weight of wMMD regularization gets larger.
+We visualize the embedding of a CNN model trained on the CE-T1 dataset, with different regularization. The **WMMD** regularization separates the word vectors under different labels and enforces the word-level discrepancy between the two groups. The degree of the discrepancy increases as the weight of **WMMD** regularization gets larger.
 
-![embedding-visualization](figures/embed-visual.png)
+<img src="figures/embed-visual.png" width="440" />
 
 #### Setup
 ```shell
