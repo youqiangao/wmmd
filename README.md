@@ -37,3 +37,16 @@ For more details, refer to `python main.py --help`. Currently, the learning fram
 2. model: cnn, bilstm, gru, mlp, logistic
 3. regularizer: wmmd, swmmd (structured wmmd), biwmmd (bigram wmmd), dropout, l1, none
 
+### Citation
+If you use this code, please cite the following paper:
+```citation
+@article{gao2025word,
+  title={Word-Level Maximum Mean Discrepancy Regularization for Word Embedding},
+  author={Gao, Youqian and Dai, Ben},
+  journal={Journal of the American Statistical Association},
+  number={just-accepted},
+  pages={1--22},
+  year={2025},
+  publisher={Taylor \& Francis}
+}
+```
